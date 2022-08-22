@@ -11,26 +11,26 @@ import 'result.dart';
     if(bm<18.5) {
         res = 'Underweight';
         color = Colors.blue;
-      }
-      else if((bm>=18.5) && (bm<25)) {
+    }
+    else if((bm>=18.5) && (bm<25)) {
         res = 'Normal weight';
         color = Colors.green;
-      }
-      else if((bm>=25) && (bm<30)) {
+    }
+    else if((bm>=25) && (bm<30)) {
         res = 'Overweight';
         color = Colors.yellow;
-      }
-      else if((bm>=30) && (bm<40)) {
+    }
+    else if((bm>=30) && (bm<40)) {
         res = 'Obseity';
         color = Colors.orange;
-      }
-      else{
+    }
+    else{
         res =  'Extreme Obseity';
         color = Colors.red;
-      }
+    }
       //navigate to result page
-      Navigator.push(
+    Navigator.push(
         context,
         MaterialPageRoute(builder: (context) =>  Result(sex: sex,res:res,color: color,bmi: bm,)),
-      );
-    }
+    );
+  }
