@@ -114,10 +114,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
             ),
             SizedBox(height: MediaQuery.of(context).size.height*0.03,),
+            //this function is defined in compenets page
             sliderContainer(
               Row(
                 children: [
-                  unity('(kg)',context),
+                  unity('(kg)',context), //this function is defined in compenets page
                   Container(
                     width: MediaQuery.of(context).size.width*0.75,
                     child:sfSlider(10.0,170.0,20,0),
@@ -127,10 +128,11 @@ class _MyHomePageState extends State<MyHomePage> {
               context
             ),
             SizedBox(height: MediaQuery.of(context).size.height*0.03,),
+            //this function is defined in compenets page
             sliderContainer(
               Row(
                 children: [
-                  unity('(cm)', context),
+                  unity('(cm)', context), //this function is defined in compenets page
                   Container(
                     width: MediaQuery.of(context).size.width*0.75,
                     child:sfSlider(20.0,200.0,30,1),
@@ -140,11 +142,12 @@ class _MyHomePageState extends State<MyHomePage> {
               context
             ),
             SizedBox(height: MediaQuery.of(context).size.height*0.03,),
+            //this function is defined in compenets page
             calcule(
               context,
               TextButton(
                 onPressed: (){
-                  bmi(_value,_value1,context,sex);
+                  bmi(_value,_value1,context,sex); //this function is defined in controller page
                 },
                 child:const Text(
                   'Calculate your BMI',
